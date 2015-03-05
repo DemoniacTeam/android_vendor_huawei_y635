@@ -903,22 +903,4 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/lib/libixml.so:system/lib/libixml.so \
     vendor/huawei/g620s/proprietary/lib/libminui.so:system/lib/libminui.so \
     vendor/huawei/g620s/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
-    vendor/huawei/g620s/proprietary/lib/modules/pronto/pronto_wlan.ko:system/lib/modules/pronto/pronto_wlan.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/dma_test.ko:system/lib/modules/dma_test.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/gpio_axis.ko:system/lib/modules/gpio_axis.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/gpio_event.ko:system/lib/modules/gpio_event.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/gpio_input.ko:system/lib/modules/gpio_input.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/gpio_matrix.ko:system/lib/modules/gpio_matrix.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/gpio_output.ko:system/lib/modules/gpio_output.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/ice40-hcd.ko:system/lib/modules/ice40-hcd.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/mcDrvModule.ko:system/lib/modules/mcDrvModule.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/mcKernelApi.ko:system/lib/modules/mcKernelApi.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/mmc_block_test.ko:system/lib/modules/mmc_block_test.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/mmc_test.ko:system/lib/modules/mmc_test.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/msm-buspm-dev.ko:system/lib/modules/msm-buspm-dev.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/oprofile.ko:system/lib/modules/oprofile.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/qcrypto.ko:system/lib/modules/qcrypto.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/radio-iris-transport.ko:system/lib/modules/radio-iris-transport.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/spidev.ko:system/lib/modules/spidev.ko \
-    vendor/huawei/g620s/proprietary/lib/modules/test-iosched.ko:system/lib/modules/test-iosched.ko
+    vendor/huawei/g620s/proprietary/lib/modules/pronto/pronto_wlan.ko:system/lib/modules/pronto/pronto_wlan.ko 

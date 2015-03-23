@@ -581,9 +581,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS    
 PRODUCT_COPY_FILES += \
-    vendor/huawei/g620s/proprietary/bin/garden_app:system/bin/garden_app \
     vendor/huawei/g620s/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
-    vendor/huawei/g620s/proprietary/bin/gps_check:system/bin/gps_check \
     vendor/huawei/g620s/proprietary/bin/location-mq:system/bin/location-mq \
     vendor/huawei/g620s/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/huawei/g620s/proprietary/bin/lowi-server:system/bin/lowi-server \
@@ -606,7 +604,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/huawei/g620s/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/huawei/g620s/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \    
+    vendor/huawei/g620s/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
@@ -616,7 +614,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwifiscanner.so:system/vendor/lib/libwifiscanner.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so \
@@ -678,56 +675,11 @@ PRODUCT_COPY_FILES += \
 
 # Misc    
 PRODUCT_COPY_FILES += \
-    vendor/huawei/g620s/proprietary/bin/bootanimationex:system/bin/bootanimationex \
-    vendor/huawei/g620s/proprietary/bin/brctl:system/bin/brctl \
-    vendor/huawei/g620s/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
-    vendor/huawei/g620s/proprietary/bin/callife:system/bin/callife \
-    vendor/huawei/g620s/proprietary/bin/crda:system/bin/crda \
-    vendor/huawei/g620s/proprietary/bin/device_monitor:system/bin/device_monitor \
-    vendor/huawei/g620s/proprietary/bin/diag_callback_client:system/bin/diag_callback_client \
-    vendor/huawei/g620s/proprietary/bin/diag_dci_sample:system/bin/diag_dci_sample \
-    vendor/huawei/g620s/proprietary/bin/diag_socket_log:system/bin/diag_socket_log \
-    vendor/huawei/g620s/proprietary/bin/diag_uart_log:system/bin/diag_uart_log \
-    vendor/huawei/g620s/proprietary/bin/dsdnsutil:system/bin/dsdnsutil \
-    vendor/huawei/g620s/proprietary/bin/do_ddrtest:system/bin/do_ddrtest \
-    vendor/huawei/g620s/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/huawei/g620s/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-    vendor/huawei/g620s/proprietary/bin/hwnff:system/bin/hwnff \
-    vendor/huawei/g620s/proprietary/bin/hwnffserver:system/bin/hwnffserver \
-    vendor/huawei/g620s/proprietary/bin/diag_klog:system/bin/diag_klog \
-    vendor/huawei/g620s/proprietary/bin/iperf:system/bin/iperf \
-    vendor/huawei/g620s/proprietary/bin/isdbtmmtest:system/bin/isdbtmmtest \
-    vendor/huawei/g620s/proprietary/bin/iw:system/bin/iw \
-    vendor/huawei/g620s/proprietary/bin/iwconfig:system/bin/iwconfig \
-    vendor/huawei/g620s/proprietary/bin/iwlist:system/bin/iwlist \
-    vendor/huawei/g620s/proprietary/bin/iwpriv:system/bin/iwpriv \
-    vendor/huawei/g620s/proprietary/bin/mc-manager:system/bin/mc-manager \
-    vendor/huawei/g620s/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
-    vendor/huawei/g620s/proprietary/bin/modempre:system/bin/modempre \
     vendor/huawei/g620s/proprietary/bin/nl_listener:system/bin/nl_listener \
-    vendor/huawei/g620s/proprietary/bin/n_smux:system/bin/n_smux \
-    vendor/huawei/g620s/proprietary/bin/nvext:system/bin/nvext \
-    vendor/huawei/g620s/proprietary/bin/oeminfo_server:system/bin/oeminfo_server \
-    vendor/huawei/g620s/proprietary/bin/oem_sar_main:system/bin/oem_sar_main \
-    vendor/huawei/g620s/proprietary/bin/port-bridge:system/bin/port-bridge \
-    vendor/huawei/g620s/proprietary/bin/preparesd.sh:system/bin/preparesd.sh \
-    vendor/huawei/g620s/proprietary/bin/qrngd:system/bin/qrngd \
-    vendor/huawei/g620s/proprietary/bin/qrngp:system/bin/qrngp \
-    vendor/huawei/g620s/proprietary/bin/qseecom_sample_client:system/bin/qseecom_sample_client \
-    vendor/huawei/g620s/proprietary/bin/diag_qshrink4_daemon:system/bin/diag_qshrink4_daemon \
-    vendor/huawei/g620s/proprietary/bin/regdbdump:system/bin/regdbdump \
-    vendor/huawei/g620s/proprietary/bin/rmnetcli:system/bin/rmnetcli \
-    vendor/huawei/g620s/proprietary/bin/send_data_srv:system/bin/send_data_srv \
-    vendor/huawei/g620s/proprietary/bin/StoreKeybox:system/bin/StoreKeybox \
-    vendor/huawei/g620s/proprietary/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
-    vendor/huawei/g620s/proprietary/bin/tinycap:system/bin/tinycap \
-    vendor/huawei/g620s/proprietary/bin/tinymix:system/bin/tinymix \
-    vendor/huawei/g620s/proprietary/bin/tinypcminfo:system/bin/tinypcminfo \
-    vendor/huawei/g620s/proprietary/bin/tinyplay:system/bin/tinyplay \
-    vendor/huawei/g620s/proprietary/bin/usb_uicc_client:system/bin/usb_uicc_client \
-    vendor/huawei/g620s/proprietary/bin/wdsdaemon:system/bin/wdsdaemon \
-    vendor/huawei/g620s/proprietary/xbin/qlogd:system/xbin/qlogd
-    
+    vendor/huawei/g620s/proprietary/bin/bootanimationex:system/bin/bootanimationex \
+    vendor/huawei/g620s/proprietary/bin/crda:system/bin/crda \
+
 # Nfc
 PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/bin/nfc_detect:system/bin/nfc_detect \
@@ -824,11 +776,12 @@ PRODUCT_COPY_FILES += \
 # WiFi    
 PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/bin/ptt_socket_app:system/bin/ptt_socket_app \
-    vendor/huawei/g620s/proprietary/bin/rfs_access:system/bin/rfs_access \    
+    vendor/huawei/g620s/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/huawei/g620s/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
     vendor/huawei/g620s/proprietary/bin/wlan_detect:system/bin/wlan_detect \
     vendor/huawei/g620s/proprietary/xbin/wifi_aging:system/xbin/wifi_aging \
     vendor/huawei/g620s/proprietary/xbin/wifi_power_off:system/xbin/wifi_power_off \
+    vendor/huawei/g620s/proprietary/vendor/lib/libwifiscanner.so:system/vendor/lib/libwifiscanner.so \
     vendor/huawei/g620s/proprietary/etc/wifi/WCNSS_hw_wlan_nv.bin:system/etc/wifi/WCNSS_hw_wlan_nv.bin \
     vendor/huawei/g620s/proprietary/etc/wifi/WCNSS_hw_wlan_nv_c8817d_VC.bin:system/etc/wifi/WCNSS_hw_wlan_nv_c8817d_VC.bin \
     vendor/huawei/g620s/proprietary/etc/wifi/WCNSS_hw_wlan_nv_c8817e_VC.bin:system/etc/wifi/WCNSS_hw_wlan_nv_c8817e_VC.bin \

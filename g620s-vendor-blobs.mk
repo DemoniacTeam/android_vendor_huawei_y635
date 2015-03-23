@@ -606,6 +606,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/huawei/g620s/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/huawei/g620s/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \    
     vendor/huawei/g620s/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
@@ -657,14 +658,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so
     
-# Listen service
-PRODUCT_COPY_FILES += \
-    vendor/huawei/g620s/proprietary/vendor/lib/liblistenhardware.so:system/vendor/lib/liblistenhardware.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/liblistenjni.so:system/vendor/lib/liblistenjni.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/liblistensoundmodel.so:system/vendor/lib/liblistensoundmodel.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/liblistensoundmodel2.so:system/vendor/lib/liblistensoundmodel2.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/liblisten.so:system/vendor/lib/liblisten.so
-
 # Media    
 PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
@@ -788,22 +781,17 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so
     
-# Radio
+# Radio (RIL)
 PRODUCT_COPY_FILES += \
-    vendor/huawei/g620s/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/huawei/g620s/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/huawei/g620s/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/huawei/g620s/proprietary/bin/radish:system/bin/radish \
-    vendor/huawei/g620s/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/huawei/g620s/proprietary/bin/rild:system/bin/rild \
     vendor/huawei/g620s/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/huawei/g620s/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/huawei/g620s/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/huawei/g620s/proprietary/lib/liboeminfo_oem_api.so:system/lib/liboeminfo_oem_api.so \
-    vendor/huawei/g620s/proprietary/lib/libqsap_sdk.so:system/lib/libqsap_sdk.so \
-    vendor/huawei/g620s/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/huawei/g620s/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/huawei/g620s/proprietary/lib/librilutils.so:system/lib/librilutils.so \
     vendor/huawei/g620s/proprietary/lib/libxml2.so:system/lib/libxml2.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libCommandSvc.so:system/vendor/lib/libCommandSvc.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
@@ -822,12 +810,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/huawei/g620s/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so 
-    
-# Usbhub
-PRODUCT_COPY_FILES += \
-    vendor/huawei/g620s/proprietary/bin/usbhub:system/bin/usbhub \
-    vendor/huawei/g620s/proprietary/bin/usbhub_init:system/bin/usbhub_init
-    
+
 # Venus (media) firmware
 PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
@@ -838,24 +821,10 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
     vendor/huawei/g620s/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt 
     
-# Wfd
-PRODUCT_COPY_FILES += \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwfdcommonutils.so:system/vendor/lib/libwfdcommonutils.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwfdmmsink.so:system/vendor/lib/libwfdmmsink.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwfdmmsrc.so:system/vendor/lib/libwfdmmsrc.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwfdmmutils.so:system/vendor/lib/libwfdmmutils.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwfdnative.so:system/vendor/lib/libwfdnative.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwfdrtsp.so:system/vendor/lib/libwfdrtsp.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwfdsm.so:system/vendor/lib/libwfdsm.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwfduibcinterface.so:system/vendor/lib/libwfduibcinterface.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwfduibcsink.so:system/vendor/lib/libwfduibcsink.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwfduibcsinkinterface.so:system/vendor/lib/libwfduibcsinkinterface.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwfduibcsrc.so:system/vendor/lib/libwfduibcsrc.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libwfduibcsrcinterface.so:system/vendor/lib/libwfduibcsrcinterface.so
-
 # WiFi    
 PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/bin/ptt_socket_app:system/bin/ptt_socket_app \
+    vendor/huawei/g620s/proprietary/bin/rfs_access:system/bin/rfs_access \    
     vendor/huawei/g620s/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
     vendor/huawei/g620s/proprietary/bin/wlan_detect:system/bin/wlan_detect \
     vendor/huawei/g620s/proprietary/xbin/wifi_aging:system/xbin/wifi_aging \
@@ -890,12 +859,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/wifi/wifi_mt_finish_5g_2.5.sh:system/wifi/wifi_mt_finish_5g_2.5.sh \
     vendor/huawei/g620s/proprietary/lib/modules/pronto/pronto_wlan.ko:system/lib/modules/pronto/pronto_wlan.ko    
 
-# Wnn    
-PRODUCT_COPY_FILES += \
-    vendor/huawei/g620s/proprietary/lib/libwnndict.so:system/lib/libwnndict.so \
-    vendor/huawei/g620s/proprietary/lib/libWnnEngDic.so:system/lib/libWnnEngDic.so \
-    vendor/huawei/g620s/proprietary/lib/libWnnJpnDic.so:system/lib/libWnnJpnDic.so 
-    
 # Unknown    
 PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libGPTEE.so:system/vendor/lib/libGPTEE.so \

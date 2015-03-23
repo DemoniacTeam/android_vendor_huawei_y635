@@ -28,7 +28,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
     vendor/huawei/g620s/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/huawei/g620s/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/huawei/g620s/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so 
@@ -41,8 +40,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/huawei/g620s/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
-    vendor/huawei/g620s/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/liboi_sbc_decoder.so:system/vendor/lib/liboi_sbc_decoder.so 
+    vendor/huawei/g620s/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so
     
 # Bson    
 PRODUCT_COPY_FILES += \
@@ -702,8 +700,6 @@ PRODUCT_COPY_FILES += \
 # Postprocessing    
 PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
-    vendor/huawei/g620s/proprietary/lib/libtinyxml2.so:system/lib/libtinyxml2.so \
-    vendor/huawei/g620s/proprietary/lib/libtinyxml.so:system/lib/libtinyxml.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so

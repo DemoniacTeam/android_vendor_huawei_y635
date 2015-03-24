@@ -753,6 +753,11 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so
+
+# Sensors
+PRODUCT_COPY_FILES += \
+    vendor/huawei/g620s/proprietary/bin/sensorservice:system/bin/sensorservice \
+    vendor/huawei/g620s/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so
     
 # Thermal
 PRODUCT_COPY_FILES += \

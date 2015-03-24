@@ -49,7 +49,6 @@ PRODUCT_COPY_FILES += \
 # Camera  
 PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/huawei/g620s/proprietary/lib/libchromatix_imx135_liveshot.so:system/lib/libchromatix_imx135_liveshot.so \
     vendor/huawei/g620s/proprietary/lib/libhdr.so:system/lib/libhdr.so \
     vendor/huawei/g620s/proprietary/lib/liboeminfo.so:system/lib/liboeminfo.so \
     vendor/huawei/g620s/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
@@ -114,6 +113,110 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libactuator_s5k4e1_liteon_13p1.so:system/vendor/lib/libactuator_s5k4e1_liteon_13p1.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libactuator_s5k4e1_liteon_13p1_camcorder.so:system/vendor/lib/libactuator_s5k4e1_liteon_13p1_camcorder.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libactuator_s5k4e1_liteon_13p1_camera.so:system/vendor/lib/libactuator_s5k4e1_liteon_13p1_camera.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libdsucsd.so:system/vendor/lib/libdsucsd.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_gc2355_ofilm_ohw2f03.so:system/vendor/lib/libmmcamera_gc2355_ofilm_ohw2f03.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_hi256.so:system/vendor/lib/libmmcamera_hi256.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx132.so:system/vendor/lib/libmmcamera_imx132.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx134.so:system/vendor/lib/libmmcamera_imx134.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx135.so:system/vendor/lib/libmmcamera_imx135.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx214_foxconn.so:system/vendor/lib/libmmcamera_imx214_foxconn.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx214_sunny.so:system/vendor/lib/libmmcamera_imx214_sunny.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx219_liteon.so:system/vendor/lib/libmmcamera_imx219_liteon.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx219_ofilm.so:system/vendor/lib/libmmcamera_imx219_ofilm.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx328_sunny_p13n10a.so:system/vendor/lib/libmmcamera_imx328_sunny_p13n10a.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_liteon_imx219_eeprom.so:system/vendor/lib/libmmcamera_liteon_imx219_eeprom.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_mt9d015_sunny_p2m19a.so:system/vendor/lib/libmmcamera_mt9d015_sunny_p2m19a.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so:system/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov2680.so:system/vendor/lib/libmmcamera_ov2680.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov2680_5987fhq.so:system/vendor/lib/libmmcamera_ov2680_5987fhq.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov2680_byd_bm2920b.so:system/vendor/lib/libmmcamera_ov2680_byd_bm2920b.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov2680_ofilm_fe16.so:system/vendor/lib/libmmcamera_ov2680_ofilm_fe16.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov2680_skuhf.so:system/vendor/lib/libmmcamera_ov2680_skuhf.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov2720.so:system/vendor/lib/libmmcamera_ov2720.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5645.so:system/vendor/lib/libmmcamera_ov5645.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_foxconn.so:system/vendor/lib/libmmcamera_ov5648_foxconn.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_foxconn_132.so:system/vendor/lib/libmmcamera_ov5648_foxconn_132.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_oty5f03.so:system/vendor/lib/libmmcamera_ov5648_oty5f03.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_p5v18g.so:system/vendor/lib/libmmcamera_ov5648_p5v18g.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_q5v22e.so:system/vendor/lib/libmmcamera_ov5648_q5v22e.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_sunny_p5v18g.so:system/vendor/lib/libmmcamera_ov5648_sunny_p5v18g.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_sunny_p5v36d.so:system/vendor/lib/libmmcamera_ov5648_sunny_p5v36d.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5670_byd_cht854b.so:system/vendor/lib/libmmcamera_ov5670_byd_cht854b.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5670_q5v41b.so:system/vendor/lib/libmmcamera_ov5670_q5v41b.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5670_sunny_p5v42b.so:system/vendor/lib/libmmcamera_ov5670_sunny_p5v42b.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov8825.so:system/vendor/lib/libmmcamera_ov8825.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov8858_foxconn.so:system/vendor/lib/libmmcamera_ov8858_foxconn.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov8865_q8v18a.so:system/vendor/lib/libmmcamera_ov8865_q8v18a.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov9724.so:system/vendor/lib/libmmcamera_ov9724.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov9724_foxconn.so:system/vendor/lib/libmmcamera_ov9724_foxconn.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov13850.so:system/vendor/lib/libmmcamera_ov13850.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov13850_sunny_p13v01h.so:system/vendor/lib/libmmcamera_ov13850_sunny_p13v01h.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_s5k3l1yx.so:system/vendor/lib/libmmcamera_s5k3l1yx.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_S5K4E1_13P1BA.so:system/vendor/lib/libmmcamera_S5K4E1_13P1BA.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_s5k4e1_foxconn_dc0301a.so:system/vendor/lib/libmmcamera_s5k4e1_foxconn_dc0301a.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_s5k4e1_liteon_13p1.so:system/vendor/lib/libmmcamera_s5k4e1_liteon_13p1.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_S5K4E1_SKUHF.so:system/vendor/lib/libmmcamera_S5K4E1_SKUHF.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_s5k4e1_sunny.so:system/vendor/lib/libmmcamera_s5k4e1_sunny.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_s5k4e1_sunny_132.so:system/vendor/lib/libmmcamera_s5k4e1_sunny_132.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_s5k9a1_liteon.so:system/vendor/lib/libmmcamera_s5k9a1_liteon.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so:system/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so:system/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so:system/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so:system/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so:system/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sp1628.so:system/vendor/lib/libmmcamera_sp1628.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_imx214_eeprom.so:system/vendor/lib/libmmcamera_sunny_imx214_eeprom.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so:system/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so:system/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_q5v22e_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v22e_eeprom.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so:system/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_truly_cm7700_eeprom.so:system/vendor/lib/libmmcamera_truly_cm7700_eeprom.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmhttpstack.so:system/vendor/lib/libmmhttpstack.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmi.so:system/vendor/lib/libmmi.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmiipstreammmihttp.so:system/vendor/lib/libmmiipstreammmihttp.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmipstreamaal.so:system/vendor/lib/libmmipstreamaal.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmipstreamnetwork.so:system/vendor/lib/libmmipstreamnetwork.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmipstreamsourcehttp.so:system/vendor/lib/libmmipstreamsourcehttp.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmipstreamutils.so:system/vendor/lib/libmmipstreamutils.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libmmQTA.so:system/vendor/lib/libmmQTA.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
+    vendor/huawei/g620s/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
+
+# Camera Chromatix
+PRODUCT_COPY_FILES += \
+    vendor/huawei/g620s/proprietary/lib/libchromatix_imx135_liveshot.so:system/lib/libchromatix_imx135_liveshot.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libchromatix_gc2355_ofilm_ohw2f03_common.so:system/vendor/lib/libchromatix_gc2355_ofilm_ohw2f03_common.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libchromatix_gc2355_ofilm_ohw2f03_default_video.so:system/vendor/lib/libchromatix_gc2355_ofilm_ohw2f03_default_video.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libchromatix_gc2355_ofilm_ohw2f03_preview.so:system/vendor/lib/libchromatix_gc2355_ofilm_ohw2f03_preview.so \
@@ -416,107 +519,10 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_preview.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_preview.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_snapshot.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_snapshot.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_video_hd.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_video_hd.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libdsucsd.so:system/vendor/lib/libdsucsd.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_gc2355_ofilm_ohw2f03.so:system/vendor/lib/libmmcamera_gc2355_ofilm_ohw2f03.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_hi256.so:system/vendor/lib/libmmcamera_hi256.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx132.so:system/vendor/lib/libmmcamera_imx132.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx134.so:system/vendor/lib/libmmcamera_imx134.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx135.so:system/vendor/lib/libmmcamera_imx135.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx214_foxconn.so:system/vendor/lib/libmmcamera_imx214_foxconn.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx214_sunny.so:system/vendor/lib/libmmcamera_imx214_sunny.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx219_liteon.so:system/vendor/lib/libmmcamera_imx219_liteon.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx219_ofilm.so:system/vendor/lib/libmmcamera_imx219_ofilm.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_imx328_sunny_p13n10a.so:system/vendor/lib/libmmcamera_imx328_sunny_p13n10a.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_liteon_imx219_eeprom.so:system/vendor/lib/libmmcamera_liteon_imx219_eeprom.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_mt9d015_sunny_p2m19a.so:system/vendor/lib/libmmcamera_mt9d015_sunny_p2m19a.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so:system/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov2680.so:system/vendor/lib/libmmcamera_ov2680.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov2680_5987fhq.so:system/vendor/lib/libmmcamera_ov2680_5987fhq.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov2680_byd_bm2920b.so:system/vendor/lib/libmmcamera_ov2680_byd_bm2920b.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov2680_ofilm_fe16.so:system/vendor/lib/libmmcamera_ov2680_ofilm_fe16.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov2680_skuhf.so:system/vendor/lib/libmmcamera_ov2680_skuhf.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov2720.so:system/vendor/lib/libmmcamera_ov2720.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5645.so:system/vendor/lib/libmmcamera_ov5645.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_foxconn.so:system/vendor/lib/libmmcamera_ov5648_foxconn.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_foxconn_132.so:system/vendor/lib/libmmcamera_ov5648_foxconn_132.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_oty5f03.so:system/vendor/lib/libmmcamera_ov5648_oty5f03.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_p5v18g.so:system/vendor/lib/libmmcamera_ov5648_p5v18g.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_q5v22e.so:system/vendor/lib/libmmcamera_ov5648_q5v22e.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_sunny_p5v18g.so:system/vendor/lib/libmmcamera_ov5648_sunny_p5v18g.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5648_sunny_p5v36d.so:system/vendor/lib/libmmcamera_ov5648_sunny_p5v36d.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5670_byd_cht854b.so:system/vendor/lib/libmmcamera_ov5670_byd_cht854b.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5670_q5v41b.so:system/vendor/lib/libmmcamera_ov5670_q5v41b.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov5670_sunny_p5v42b.so:system/vendor/lib/libmmcamera_ov5670_sunny_p5v42b.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov8825.so:system/vendor/lib/libmmcamera_ov8825.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov8858_foxconn.so:system/vendor/lib/libmmcamera_ov8858_foxconn.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov8865_q8v18a.so:system/vendor/lib/libmmcamera_ov8865_q8v18a.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov9724.so:system/vendor/lib/libmmcamera_ov9724.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov9724_foxconn.so:system/vendor/lib/libmmcamera_ov9724_foxconn.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov13850.so:system/vendor/lib/libmmcamera_ov13850.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_ov13850_sunny_p13v01h.so:system/vendor/lib/libmmcamera_ov13850_sunny_p13v01h.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_s5k3l1yx.so:system/vendor/lib/libmmcamera_s5k3l1yx.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_S5K4E1_13P1BA.so:system/vendor/lib/libmmcamera_S5K4E1_13P1BA.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_s5k4e1_foxconn_dc0301a.so:system/vendor/lib/libmmcamera_s5k4e1_foxconn_dc0301a.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_s5k4e1_liteon_13p1.so:system/vendor/lib/libmmcamera_s5k4e1_liteon_13p1.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_S5K4E1_SKUHF.so:system/vendor/lib/libmmcamera_S5K4E1_SKUHF.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_s5k4e1_sunny.so:system/vendor/lib/libmmcamera_s5k4e1_sunny.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_s5k4e1_sunny_132.so:system/vendor/lib/libmmcamera_s5k4e1_sunny_132.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_s5k9a1_liteon.so:system/vendor/lib/libmmcamera_s5k9a1_liteon.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so:system/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so:system/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so:system/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so:system/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so:system/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sp1628.so:system/vendor/lib/libmmcamera_sp1628.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_imx214_eeprom.so:system/vendor/lib/libmmcamera_sunny_imx214_eeprom.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so:system/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so:system/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_q5v22e_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v22e_eeprom.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so:system/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_truly_cm7700_eeprom.so:system/vendor/lib/libmmcamera_truly_cm7700_eeprom.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmhttpstack.so:system/vendor/lib/libmmhttpstack.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmi.so:system/vendor/lib/libmmi.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmiipstreammmihttp.so:system/vendor/lib/libmmiipstreammmihttp.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmipstreamaal.so:system/vendor/lib/libmmipstreamaal.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmipstreamnetwork.so:system/vendor/lib/libmmipstreamnetwork.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmipstreamsourcehttp.so:system/vendor/lib/libmmipstreamsourcehttp.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmipstreamutils.so:system/vendor/lib/libmmipstreamutils.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libmmQTA.so:system/vendor/lib/libmmQTA.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so 
+    vendor/huawei/g620s/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so
+
+
+ 
 
 # Camera firmware    
 PRODUCT_COPY_FILES += \

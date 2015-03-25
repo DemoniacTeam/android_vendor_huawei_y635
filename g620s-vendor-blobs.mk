@@ -50,7 +50,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/huawei/g620s/proprietary/lib/libhdr.so:system/lib/libhdr.so \
-    vendor/huawei/g620s/proprietary/lib/liboeminfo.so:system/lib/liboeminfo.so \
     vendor/huawei/g620s/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
     vendor/huawei/g620s/proprietary/lib/libmrc_cg_mfdenoise.so:system/lib/libmrc_cg_mfdenoise.so \
     vendor/huawei/g620s/proprietary/lib/libmrc_cg_postprocess.so:system/lib/libmrc_cg_postprocess.so \
@@ -75,9 +74,13 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g620s/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libmmQTA.so:system/vendor/lib/libmmQTA.so \
-    vendor/huawei/g620s/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/huawei/g620s/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
+    
+# Camera  OEM
+PRODUCT_COPY_FILES += \
+    vendor/huawei/g620s/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
+    vendor/huawei/g620s/proprietary/lib/liboeminfo.so:system/lib/liboeminfo.so
 
 # Camera libactuator
 PRODUCT_COPY_FILES += \

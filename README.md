@@ -1,3 +1,3 @@
-# android_vendor_huawei_g620s
+# android_vendor_huawei_hwY635
 
-Thanks dianlujitao
+Thanks dianlujitao & huawei g620s development team

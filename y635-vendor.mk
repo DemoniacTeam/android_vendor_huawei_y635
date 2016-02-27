@@ -25,4 +25,4 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libmdmdetect
 
-$(call inherit-product, vendor/huawei/hwY635/hwY635-vendor-blobs.mk)
+$(call inherit-product, vendor/huawei/y635/y635-vendor-blobs.mk)

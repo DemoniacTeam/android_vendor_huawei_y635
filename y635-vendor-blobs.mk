@@ -1,4 +1,4 @@
-y# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -65,7 +65,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/y635/proprietary/lib/libhdr.so:system/lib/libhdr.so \
     vendor/huawei/y635/proprietary/lib/liboeminfo.so:system/lib/liboeminfo.so \
     vendor/huawei/y635/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
-    vendor/huawei/y635proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
+    vendor/huawei/y635/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/huawei/y635/proprietary/lib/libmrc_cg_mfdenoise.so:system/lib/libmrc_cg_mfdenoise.so \
     vendor/huawei/y635/proprietary/lib/libmrc_cg_postprocess.so:system/lib/libmrc_cg_postprocess.so \
     vendor/huawei/y635/proprietary/lib/libtrack.so:system/lib/libtrack.so \
@@ -293,7 +293,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/y635/proprietary/vendor/lib/libchromatix_ov5670_sunny_p5v42b_snapshot.so:system/vendor/lib/libchromatix_ov5670_sunny_p5v42b_snapshot.so \
     vendor/huawei/y635/proprietary/vendor/lib/libchromatix_ov5670_sunny_p5v42b_video_hd.so:system/vendor/lib/libchromatix_ov5670_sunny_p5v42b_video_hd.so \
     vendor/huawei/y635/proprietary/vendor/lib/libchromatix_ov5670_sunny_p5v42b_zsl.so:system/vendor/lib/libchromatix_ov5670_sunny_p5v42b_zsl.so \
-    vendor/huawei/y635/proprietary/vendor/lib/libchromatix_ov8825_common.so:system/vendor/lib/libchromatix_ov8825_commonhwY635
+    vendor/huawei/y635/proprietary/vendor/lib/libchromatix_ov8825_common.so:system/vendor/lib/libchromatix_ov8825_commonhwY635 \
     vendor/huawei/y635/proprietary/vendor/lib/libchromatix_ov8825_default_video.so:system/vendor/lib/libchromatix_ov8825_default_video.so \
     vendor/huawei/y635/proprietary/vendor/lib/libchromatix_ov8825_hfr_60fps.so:system/vendor/lib/libchromatix_ov8825_hfr_60fps.so \
     vendor/huawei/y635/proprietary/vendor/lib/libchromatix_ov8825_hfr_90fps.so:system/vendor/lib/libchromatix_ov8825_hfr_90fps.so \
@@ -954,4 +954,3 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/y635/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
     vendor/huawei/y635/proprietary/vendor/lib/libmmrtpdecoder.so:system/vendor/lib/libmmrtpdecoder.so \
     vendor/huawei/y635/proprietary/vendor/lib/libmmrtpencoder.so:system/vendor/lib/libmmrtpencoder.so	
-
